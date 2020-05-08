@@ -1,0 +1,144 @@
+/*
+    >_Created by robby on 31 March.
+    Time: 21:39
+    Copyright @ 2020
+*/
+html,body {
+  height: 100%;
+}
+#bg-dua{
+    height: 100vh;
+    background-color: #C0BABA; 
+}
+#bg-lima{
+    height: 100%;
+    background-color: #6B696A;
+}
+#bg-satu{
+    height: 100vh;
+    background-color: #D9D5D4;
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50% 50%;
+    background-attachment: fixed;
+}
+.bg-tiga{
+    color: white;
+    background-color: #527B69;
+}
+#bg-empat{
+    height: 100%;
+    background-color: #181818;
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 85%;
+    background-attachment: fixed;
+}
+.link-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: serif;
+}
+.link-button:focus {
+  outline: none;
+}
+.link-button:active {
+  color:red;
+}
+.link-button:hover {
+    text-decoration: underline;
+}
+.img-center{
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+.button {
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button-satu{
+    background-color: #FFFFFF;
+    color: #B1A7A7;
+    width: 250px;
+}
+button.button-satu:hover{
+    background-color: #5AE20B;
+    color: #FFFFFF;
+}
+.button-dua{
+    background-color: #5AE20B;
+    color: #FFFFFF;
+    width: 250px;
+}
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+a:hover {
+    color: teal;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+.bounce {
+    animation: bounce 0.5s infinite;
+}
+.bounce:hover{
+    filter: invert(57%) sepia(80%) saturate(1262%) hue-rotate(57deg) brightness(114%) contrast(92%);
+    cursor: pointer;
+}
+.filter:hover {
+    filter: invert(57%) sepia(80%) saturate(1262%) hue-rotate(57deg) brightness(114%) contrast(92%);
+}
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+.rocket {
+  position: absolute;
+  left: 48.7%;
+  animation: fly 1s .5s ease-in;
+}
+
+@keyframes fly {
+  0% {
+    bottom: 60%;   
+  }
+  100% {
+    bottom: 100%;
+  }
+}
